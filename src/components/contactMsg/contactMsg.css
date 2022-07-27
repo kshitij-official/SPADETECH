@@ -1,0 +1,15 @@
+.contact__message {
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 217px;
+    text-align: center;
+    gap: 2rem;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 100px;
+}

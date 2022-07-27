@@ -1,0 +1,42 @@
+/* ================================================== */
+/* ===================== FOOTER ===================== */
+/* ================================================== */
+
+
+footer {
+    background-image: url("../../assets/icons/bg3.svg");
+    background-repeat: no-repeat;
+    background-color: var(--color-primary);
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 6.25rem 3.75rem 14rem;
+    color: var(--color-white);
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+}
+
+.footer__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.125rem;
+    font-size: 12px;
+    line-height: 0.875rem;
+}
+
+.footer__right ul li {
+    margin: 1rem 0;
+}
+
+.footer__copyright {
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: var(--fw-semiBold);
+}
