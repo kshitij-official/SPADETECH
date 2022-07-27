@@ -165,17 +165,6 @@ h6 {
     /* border: 3px solid green; */
 }
 
-.header__btn {
-    padding: 1.25rem 2rem;
-    background: var(--color-white);
-
-    color: var(--color-active);
-    font-size: var(--fs-body-s);
-    font-weight: var(--fw-bold);
-    letter-spacing: 1px;
-    line-height: 18px;
-}
-
 .action__btn {
     border: none;
     padding: 1.25rem 2rem;
@@ -373,11 +362,6 @@ h6 {
         gap: 2.5rem;
     }
 
-    .header__right {
-        transform: scale(.8);
-    }
-
-
 }
 
 @media screen and (max-width: 940px) {
@@ -393,11 +377,6 @@ h6 {
     /* -------- SERVICES -------- */
     .services__container {
         grid-template-columns: 1fr;
-    }
-
-    .header__container {
-        grid-template-columns: 1fr;
-        gap: 3.1875rem;
     }
 
     .footer__container {
@@ -424,33 +403,6 @@ h6 {
     .nav__list {
         display: none;
     }
-
-
-    /* -------------- HEADER -------------- */
-
-    .header__container h1 {
-        font-size: 42px;
-        line-height: 50px;
-    }
-
-    .header__container p {
-        line-height: 24px;
-        font-size: 14px;
-        border-left: 5px solid var(--color-active);
-        padding: 0 0 0 12px;
-        margin: 12 0 24px;
-    }
-
-    .header__right {
-        display: flex;
-        justify-content: center;
-    }
-
-    .header__right img {
-        max-width: 80%;
-    }
-
-    /* -------------- SECTIONS -------------- */
 
     /* -------- DATA -------- */
     .data__list {
