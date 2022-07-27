@@ -198,3 +198,21 @@ input[type=checkbox]:checked~label .nav__icon-line:nth-child(3) {
 /* ================================================== */
 /* ==================== DROPDOWN ===================== */
 /* ================================================== */
+
+.dropdown {
+    position: absolute;
+    border: 1px solid #eee;
+    background-color: var(--color-bg);
+    border-radius: .5rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+nav.nav ul li:hover> ul,
+nav.nav ul li ul:active {
+visibility: visible;
+opacity: 1;
+}

@@ -20,6 +20,11 @@ function Navbar() {
 					</li>
 					<li className="nav__item">
 						<NavLink to="/">Services ▼</NavLink>
+						<ul class="dropdown">
+								<li><a href="./">Security Audit</a></li>
+								<li><a href="./">Blockchain Development</a></li>
+								<li><a href="./">Blockchain Consulting</a></li>
+    						</ul>
 					</li>
 					<li className="nav__item">
 						<NavLink to="/">Audit</NavLink>
