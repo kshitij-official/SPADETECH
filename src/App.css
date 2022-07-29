@@ -9,10 +9,6 @@
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-
 /* 
 
 h1 landing page title
@@ -69,11 +65,13 @@ h6 footer title
     --color-danger: #E34657;
     --color-active: #EF798A;
     --color-white: #fff;
+    --color-black: #000;
 
     --color-bg: #08375B;
     --color-bg1: #F5F7F8;
     --color-bg2: #194567;
     --color-bg3: #FFFFFF;
+    --color-bg-icon: #FCEBED;
 
     --container-width-lg: 76%;
     --container-width-md: 90%;
@@ -102,7 +100,8 @@ a {
 }
 
 .container {
-    padding: 5.5rem 7.5rem;
+    /* padding: 5.5rem 7.5rem; */
+    padding: 6.5% 9.5%;
 }
 
 h1 {
@@ -127,15 +126,23 @@ h4 {
     font-size: var(--fs-heading-s);
     color: var(--color-primary);
     font-weight: var(--fw-bold);
-    /* line-height: 2.5rem; */
 }
-
 
 h6 {
     font-weight: var(--fw-bold);
     font-size: 14px;
     margin-bottom: 1.5rem;
 }
+
+
+.hightlight {
+    color: var(--color-active);
+}
+
+.border-none {
+    border-left: none;
+}
+
 
 /* -------------- END GLOBAL -------------- */
 
@@ -159,10 +166,15 @@ h6 {
     margin-top: 1.5rem;
 }
 
-.next__btn img {
-    width: 64px;
-    height: 64px;
-    /* border: 3px solid green; */
+.header__btn {
+    padding: 1.25rem 2rem;
+    background: var(--color-white);
+    color: var(--color-active);
+    font-size: var(--fs-body-s);
+    font-weight: var(--fw-bold);
+    letter-spacing: 1px;
+    line-height: 18px;
+    border: none;
 }
 
 .action__btn {
@@ -178,9 +190,6 @@ h6 {
 
 
 
-
-
-
 /* ================================================== */
 /* ==================== SECTIONS ==================== */
 /* ================================================== */
@@ -192,128 +201,16 @@ h6 {
     margin: 12px 0 48px;
 }
 
-
-.general-section1 {
-    display: grid;
-    grid-template-columns: 1fr 64px 1fr;
-    column-gap: 3.1875rem;
-    row-gap: 4rem;
-    align-items: center;
-    background: var(--color-bg1);
-}
-
-.general-section2 {
-    display: flex;
-    gap: 2.5rem;
-    background: var(--color-white);
-}
-
-.general-section3 {
-    background: var(--color-bg1);
-}
-
-.general-section3 .section__title,
-.general-section3 .section__desc {
-    text-align: center;
-}
-
-.service-icon--row {
-    display: grid;
-    grid-template-columns: 64px 1fr;
-    gap: 32px;   
-}
-
-.services-section p {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-}
-
-
-
-
-/* ================== */
-
-
-/* ======= SERVICES 3 PAGES ===== */
-
-.offers__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.offers__list p {
-    border-left: 3px solid var(--color-active);
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: var(--fw-semiBold);
-    padding-left: 20px;
-}
-
-.general-section3__container {
-    padding: 0 105px;
-    display: grid;
-    gap: 2rem;
-}
-
-
-
-/* ================== DATA SECTION ================== */
-
-.data__container {
-    padding: 2.4rem 0;
-}
-
-.data__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.data__list li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.data__list li img {
-    filter: grayscale(100%);
-}
-
-
 /* ================ SOLUTION SECTION ================ */
 
 .solutions {
     background: var(--color-bg1);
 }
 
-
 .solutions__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
-}
-
-/* .solution {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-
-/* MERGE TO CARD ICON */
-.solution__icon {
-    width: 4rem;
-    height: 4rem;
-    background: #FCEBED;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.625rem;
 }
 
 .solution p {
@@ -338,6 +235,7 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: .875rem;
 }
 
 .solution {
@@ -346,14 +244,10 @@ h6 {
     justify-content: space-between;
 }
 
-/* .service  */
-/* .service__icon {
-    border: 1px solid black;
-    width: 135px;
-    height: 135px;
-} */
 
-
+/* ================================================== */
+/* =================== RESPONSIVE =================== */
+/* ================================================== */
 
 
 @media screen and (max-width: 1380px) {
@@ -367,84 +261,36 @@ h6 {
 @media screen and (max-width: 940px) {
     .solutions__container {
         grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
         gap: 2.5rem;
     }
 
-    .data__list li img {
-        transform: scale(.8);
-    }
-
-    /* -------- SERVICES -------- */
     .services__container {
         grid-template-columns: 1fr;
-    }
-
-    .footer__container {
-        grid-column-gap: 2rem;
-        padding: 5rem 3rem 3.75rem 3rem;
     }
 
 }
 
 
+@media screen and (max-width: 710px ){
+
+    .container {
+        padding: 4rem 2.5rem;
+    } 
+    
+}
+
 @media screen and (max-width: 610px) {
 
-
-    /* -------------- GLOBAL -------------- */
     .container {
         padding: 4rem 1.875rem;
     }
-
     .section__title {
         font-size: 24px;
     }
-
-    /* -------------- NAVBAR -------------- */
-    .nav__list {
-        display: none;
-    }
-
-    /* -------- DATA -------- */
-    .data__list {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        row-gap: 1.5rem;
-    }
-
-    .data__list li img {
-        transform: scale(.9);
-    }
-
-    /* -------- SOLUTIONS -------- */
-    .solutions__container {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
-    /* -------------- FOOTER -------------- */
-
-    footer {
-        background-repeat: no-repeat;
-        background-size: 202%;
-        background-position: 0 7%;
-        position: relative;
-    }
-
-
-    .footer__container {
-        height: auto;
-        grid-template-columns: 1fr;
-        padding: 4rem 1.875rem;
-    }
-
-    .footer__right {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .footer__copyright {
-        position: absolute;
-        bottom: 5%;
+    h4 {
+        font-size: 20px;
     }
 
 }

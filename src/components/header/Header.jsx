@@ -1,63 +1,31 @@
-import binance from "../../assets/icons/binance.svg";
-import solana from "../../assets/icons/solana.svg";
-import fantom from "../../assets/icons/fantom.svg";
-import starknet from "../../assets/icons/starknet.svg";
-import polygon from "../../assets/icons/polygon.svg";
-import img from "../../assets/icons/img.svg";
-import terra from "../../assets/icons/terra.svg";
-import hero from "../../assets/img/SpadeTech.gif"
-import ethereum from "../../assets/icons/ethereum.svg"
-
+import React from "react";
+import Data from "../data/Data";
 import './header.css'
 
-function Header() {
+const Header = (props) => {
+
 	return (
 		<>
-			<header className="container header__container">
-				<div className="header__left">
-					<h1>
-						Bringing <span>blockchain</span> to life
-					</h1>
-					<p>
-						Offering security, blockchain development and consulting services,
-						Spadetech is the go-to blockchain development agency.
-					</p>
-					<button className="btn header__btn">GET STARTED</button>
-				</div>
-				<div className="header__right">
-					<img src={hero} alt="blockchain-header-img" />
+			<header>
+				{props.url && <span className="url-path">{props.url}</span>}
+				<div className="container header__container">
+					<div className="header__left">
+						{props.title}
+						<p className="header__desc--border">{props.content}</p>
+						{props.extra && <p className="header__desc">{props.description}</p>}
+						{props.homeHeader && <button className="btn header__btn">GET STARTED</button>}
+					</div>
+					<div className="header__right">
+						<img id={props.homeHeader ? "hero" : null} src={props.img} alt={props.img} />
+					</div>
 				</div>
 			</header>
-			<section className="data__container">
-				<ul className="data__list">
-					<li>
-						<img src={ethereum} alt="ethereum-logo" />
-					</li>
-					<li>
-						<img src={binance} alt="binance-logo" />
-					</li>
-					<li>
-						<img src={solana} alt="solana-logo" />
-					</li>
-					<li>
-						<img src={fantom} alt="fantom-logo" />
-					</li>
-					<li>
-						<img src={starknet} alt="starknet-logo" />
-					</li>
-					<li>
-						<img src={polygon} alt="polygon-logo" />
-					</li>
-					<li>
-						<img src={img} alt="x-logo" />
-					</li>
-					<li>
-						<img src={terra} alt="terra-logo" />
-					</li>
-				</ul>
-			</section>
+			{props.homeHeader && <Data />}
 		</>
 	);
-}
+};
 
 export default Header;
+
+
+

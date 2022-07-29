@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Services() {
     return (
-        <section className="container services" id="services">
+        <section className="container services">
             <h3 className="section__title">Our services</h3>
             <p className="section__desc">We make it easy for users to use our platform</p>
 

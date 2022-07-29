@@ -1,12 +1,12 @@
 import React from "react";
-import ServicesHeader from "../../components/ServicesHeader";
+import Header from "../../components/header/Header";
 import Card from "../../components/card/Card";
 import ContactMsg from "../../components/contactMsg/ContactMsg";
+import './services.css'
+import { consultancyHeader } from "../../utils/contents/headers-contents/headerContents";
+import { cardContent } from "../../utils/contents/cards-contents/consultancyCard";
+import { consultancy_offers_list } from "../../utils/contents/offers-list/offersContents";
 
-import { consultancyContents } from "../../utils/contents/headerContents";
-import { cardContent } from "../../utils/contents/consultancyCard";
-
-import arrow from "../../assets/icons/arrow.svg";
 
 const Consultancy = () => {
 
@@ -16,42 +16,26 @@ const Consultancy = () => {
 
 	return (
 		<>
-			<ServicesHeader
-				leftContent={consultancyContents.leftContent}
-				rightContent={consultancyContents.rightContent}
-			/>
+			<Header title={consultancyHeader.title} content={consultancyHeader.content} img={consultancyHeader.img} url={consultancyHeader.url} />
 
 			<section className="container services-section general-section1">
-				<Card class="white-card icon--row-card" iconClass={card_1.iconClass} h4={card_1.title} p={card_1.content} img={card_1.icon} />
-				<div className="next__btn">
-					<img src={arrow} alt="arrow-icon" />
-				</div>
-				<Card class="red-card icon--row-card" iconClass={card_2.iconClass} h4={card_2.title} p={card_2.content} img={card_2.icon} />
-				<Card class="white-card icon--row-card" iconClass={card_3.iconClass} h4={card_3.title} p={card_3.content} img={card_3.icon} />
-				<div className="next__btn">
-					<img src={arrow} alt="arrow-icon" />
-				</div>
-				<Card class="red-card icon--row-card" iconClass={card_4.iconClass} h4={card_4.title} p={card_4.content} img={card_4.icon} />
+				<Card cssClass="white-card icon--row-card" iconClass={card_1.iconClass} h4={card_1.title} p={card_1.content} img={card_1.icon} />
+				<div className="next__btn"></div>
+				<Card cssClass="red-card icon--row-card" iconClass={card_2.iconClass} h4={card_2.title} p={card_2.content} img={card_2.icon} />
+				<br  className="br"/>
+				<Card cssClass="white-card icon--row-card" iconClass={card_3.iconClass} h4={card_3.title} p={card_3.content} img={card_3.icon} />
+				<div className="next__btn"></div>
+				<Card cssClass="red-card icon--row-card" iconClass={card_4.iconClass} h4={card_4.title} p={card_4.content} img={card_4.icon} />
 			</section>
 
 			<section className="container services-section general-section2">
-				<h3 style={{ lineHeight: "56px" }} className="section__title">
+				<h3 className="section__title">
 					What we offer
 				</h3>
 				<div className="offers__list">
-					<p>Strategic planning and execution for your blockchain project</p>
-					<p>A comprehensive assessment of the feasibility of your idea.</p>
-					<p>
-						Identification of your target market and development of a
-						go-to-market strategy
-					</p>
-					<p>
-						An overview of the blockchain landscape and guidance on the best
-						platform for your needs.
-					</p>
-					<p>
-						Assistance with project management, quality assurance, and launch.
-					</p>
+					{consultancy_offers_list.map(offer => {
+						return <p key={offer.id}>{offer.content}</p>
+					})}
 				</div>
 			</section>
 
@@ -64,9 +48,9 @@ const Consultancy = () => {
 				</p>
 
 				<div className="general-section3__container">
-					<Card class="white-card img--row-card" h4={card1.title} p={card1.content} img={card1.icon} />
-					<Card class="white-card img--row-card" h4={card2.title} p={card2.content} img={card2.icon} />
-					<Card class="white-card img--row-card" h4={card3.title} p={card3.content} img={card3.icon} />
+					<Card iconClass="card__img" cssClass="white-card img--row-card" h4={card1.title} p={card1.content} img={card1.icon} />
+					<Card iconClass="card__img" cssClass="white-card img--row-card" h4={card2.title} p={card2.content} img={card2.icon} />
+					<Card iconClass="card__img" cssClass="white-card img--row-card" h4={card3.title} p={card3.content} img={card3.icon} />
 				</div>
 				<ContactMsg />
 			</section>

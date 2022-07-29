@@ -15,9 +15,9 @@ function Solutions() {
 				benefit.
 			</p>
 			<div className="solutions__container">
-				<article className="solution card">
+				<article className="solution card white-card">
 					<div className="card__container">
-						<div className="solution__icon">
+						<div className="card__icon">
 							<div>
 								<img src={transparent} alt="transparent-icon" />
 							</div>
@@ -36,9 +36,9 @@ function Solutions() {
 					</a>
 				</article>
 
-				<article className="solution card">
+				<article className="solution card white-card">
 					<div className="card__container">
-						<div className="solution__icon">
+						<div className="card__icon">
 							<img src={honest} alt="honest-icon" />
 						</div>
 						<div className="card__body">
@@ -55,9 +55,9 @@ function Solutions() {
 					</a>
 				</article>
 
-				<article className="solution card">
+				<article className="solution card white-card">
 					<div className="card__container">
-						<div className="solution__icon">
+						<div className="card__icon">
 							<img src={secure} alt="secure-icon" />
 						</div>
 						<div className="card__body">
@@ -74,9 +74,9 @@ function Solutions() {
 					</a>
 				</article>
 
-				<article className="solution card">
+				<article className="solution card white-card">
 					<div className="card__container">
-						<div className="solution__icon">
+						<div className="card__icon">
 							<img src={efficient} alt="efficient-icon" />
 						</div>
 						<div className="card__body">

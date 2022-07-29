@@ -1,10 +1,10 @@
 
-import sunrise from "../../assets/icons/sunrise.svg"
-import smile from "../../assets/icons/smile.svg"
-import img4 from "../../assets/img/img4.svg"
-import img5 from "../../assets/img/img5.svg"
-import img6 from "../../assets/img/img6.svg"
-import img7 from "../../assets/img/img7.svg"
+import sunrise from "../../../assets/icons/sunrise.svg"
+import smile from "../../../assets/icons/smile.svg"
+import img4 from "../../../assets/img/img4.svg"
+import img5 from "../../../assets/img/img5.svg"
+import img6 from "../../../assets/img/img6.svg"
+import img7 from "../../../assets/img/img7.svg"
 
 export const cardContent = {
     section_1 : {

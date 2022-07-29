@@ -27,7 +27,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3.125rem;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 0.875rem;
 }
 
@@ -39,4 +39,49 @@ footer {
     opacity: 0.5;
     font-size: 12px;
     font-weight: var(--fw-semiBold);
+}
+
+
+
+/* ================================================== */
+/* =================== RESPONSIVE =================== */
+/* ================================================== */
+
+
+@media screen and (max-width: 940px) {
+    .footer__container {
+        grid-column-gap: 2rem;
+        padding: 5rem 3rem 3.75rem 3rem;
+        grid-template-columns: 1fr 55%;
+    }
+
+
+}
+
+@media screen and (max-width: 610px) {
+
+    footer {
+        background-repeat: no-repeat;
+        background-size: 202%;
+        background-position: 0 7%;
+        position: relative;
+    }
+
+
+    .footer__container {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 4rem 1.875rem;
+    }
+
+    .footer__right {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .footer__copyright {
+        position: absolute;
+        bottom: 5%;
+    }
+
 }
