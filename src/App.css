@@ -143,6 +143,13 @@ h6 {
     border-left: none;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.gray-card {
+    background: var(--color-bg1);
+}
 
 /* -------------- END GLOBAL -------------- */
 
@@ -201,47 +208,21 @@ h6 {
     margin: 12px 0 48px;
 }
 
-/* ================ SOLUTION SECTION ================ */
-
-.solutions {
-    background: var(--color-bg1);
-}
-
-.solutions__container {
+.solutions__container, .services__container  {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
-}
-
-.solution p {
     font-size: 0.875rem;
     font-weight: var(--fw-medium);
     line-height: 1.5625rem;
     color: var(--color-secondary);
 }
 
-/* ================ SEVICES SECTION ================= */
+.solutions__container {
+    grid-template-columns: repeat(4, 1fr);
+}
 
 .services__container {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-}
-
-.service {
-    text-align: center;
-    background: var(--color-bg1);
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: .875rem;
-}
-
-.solution {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 
@@ -273,12 +254,12 @@ h6 {
 }
 
 
-@media screen and (max-width: 710px ){
+@media screen and (max-width: 710px) {
 
     .container {
         padding: 4rem 2.5rem;
-    } 
-    
+    }
+
 }
 
 @media screen and (max-width: 610px) {
@@ -286,9 +267,11 @@ h6 {
     .container {
         padding: 4rem 1.875rem;
     }
+
     .section__title {
         font-size: 24px;
     }
+
     h4 {
         font-size: 20px;
     }

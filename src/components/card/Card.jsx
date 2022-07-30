@@ -1,26 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './card.css'
 
-const Card = (props) => {
+const Card = ({ card }) => {
     return (
-        <article className={`card ${props.cssClass}`}>
-            {/* <div className="card__container"> */}
-                <div className={props.iconClass}>
-                    <img src={props.img} alt={props.img} />
+        <article className={`card ${card.className}`}>
+            <div className={card.subClass}>
+                <div className={card.iconClass}>
+                    <img src={card.icon} alt={card.icon} />
                 </div>
                 <div className="card__body">
-                    <h4>{props.h4}</h4>
+                    <h4>{card.title}</h4>
                     <p>
-                        {props.p}
+                        {card.content}
                     </p>
                 </div>
-            {/* </div> */}
-            {props.button && <a className="learn-more__btn" href="./">
+            </div>
+            {card.button && <Link className="learn-more__btn" to={card.url}>
                 Learn More
-            </a>}
+            </Link>}
         </article>
     )
 }
 
 export default Card
-

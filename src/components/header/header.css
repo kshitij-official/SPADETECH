@@ -3,7 +3,7 @@
 /* ================================================== */
 
 
-header {
+.header {
     background-image: url("../../assets/icons/bg.svg");
     background-position: center;
     background-size: cover;
@@ -38,6 +38,28 @@ header {
     justify-content: center;
 }
 
+
+/* ABOUT HEADER */
+
+.about-header {
+    background-image: url("../../assets/img/about-bg.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--color-bg)
+}
+
+.about-header h2 {
+    color: var(--color-white);
+    text-align: center;
+    /* line-height: 58px; */
+}
+
+.about-header p {
+    color: var(--color-white);
+    border-left: none;
+    text-align: center;
+}
 
 /* ================================================== */
 /* =================== RESPONSIVE =================== */

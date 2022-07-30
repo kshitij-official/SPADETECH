@@ -1,4 +1,4 @@
-export const consultancy_offers_list = [
+export const consultancyOffers = [
     {
         id: 1,
         content: "Strategic planning and execution for your blockchain project"
@@ -22,7 +22,7 @@ export const consultancy_offers_list = [
 ]
 
 
-export const development_offers_list = [
+export const developmentOffers = [
     {
         id: 1,
         content: "A trusted team of UK developers who will develop a tailored blockchain solution for your project needs."
@@ -38,7 +38,7 @@ export const development_offers_list = [
 ]
 
 
-export const security_offers_list = [
+export const securityOffers = [
     {
         id: 1,
         content: "A full security analysis of your smart contract code - from a team of experienced blockchain developers"

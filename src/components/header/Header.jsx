@@ -2,25 +2,25 @@ import React from "react";
 import Data from "../data/Data";
 import './header.css'
 
-const Header = (props) => {
+const Header = ({header}) => {
 
 	return (
 		<>
-			<header>
-				{props.url && <span className="url-path">{props.url}</span>}
-				<div className="container header__container">
+			<header className={header.img ?"header" : " about-header"}>
+				{header.url && <span className="url-path">{header.url}</span>}
+				<div className={header.img ? "container header__container" : "container about-header__container"}>
 					<div className="header__left">
-						{props.title}
-						<p className="header__desc--border">{props.content}</p>
-						{props.extra && <p className="header__desc">{props.description}</p>}
-						{props.homeHeader && <button className="btn header__btn">GET STARTED</button>}
+						{header.title}
+						<p className="header__desc--border">{header.content}</p>
+						{header.extra && <p className="header__desc">{header.description}</p>}
+						{header.homeHeader && <button className="btn header__btn">GET STARTED</button>}
 					</div>
-					<div className="header__right">
-						<img id={props.homeHeader ? "hero" : null} src={props.img} alt={props.img} />
-					</div>
+					{header.img && <div className="header__right">
+						<img id={header.homeHeader ? "hero" : null} src={header.img} alt={header.img} />
+					</div>}
 				</div>
 			</header>
-			{props.homeHeader && <Data />}
+			{header.homeHeader && <Data />}
 		</>
 	);
 };

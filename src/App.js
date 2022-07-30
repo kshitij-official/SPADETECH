@@ -8,6 +8,7 @@ import Consultancy from './pages/services/Consultancy'
 import Development from './pages/services/Development'
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import About from './pages/about/About';
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 					<Route path="/services/security-audit" element={<Security />} />
 					<Route path="/services/consultancy" element={<Consultancy />} />
 					<Route path="/services/development" element={<Development />} />
+					<Route path="/about" element={<About />} />
 				</Routes>
 			</ScrollToTop>
 			<Footer />

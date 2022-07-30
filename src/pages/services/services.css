@@ -1,49 +1,33 @@
-.next__btn {
-    width: 64px;
-    height: 64px;
-    background-image: url('../../assets/icons/arrow.svg');
+.services-section p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
 }
 
-
-.general-section1 {
+.services-solutions {
     display: grid;
     grid-template-columns: 1fr 64px 1fr;
     column-gap: 3.1875rem;
     row-gap: 4rem;
     align-items: center;
-    background: var(--color-bg1);
 }
 
-.general-section2 {
+.services-works {
     display: grid;
     grid-template-columns: 165px 1fr;
     gap: 90px;
-    background: var(--color-white);
 }
 
-.general-section2 h3 {
+
+/* NOT WORKING */
+.services-works h3 {
     line-height: 56px;
 }
 
-.general-section3 {
-    background: var(--color-bg1);
-}
-
-.general-section3 .section__title,
-.general-section3 .section__desc {
-    text-align: center;
-}
-
-.service-icon--row {
+.services-differences__container {
+    padding: 0 85px;
     display: grid;
-    grid-template-columns: 64px 1fr;
-    gap: 32px;
-}
-
-.services-section p {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
+    gap: 2rem;
 }
 
 
@@ -61,17 +45,15 @@
     padding-left: 20px;
 }
 
-.general-section3__container {
-    padding: 0 85px;
-    display: grid;
-    gap: 2rem;
-}
-
-
 .br {
     display: none;
 }
 
+.next__btn {
+    width: 64px;
+    height: 64px;
+    background-image: url('../../assets/icons/arrow.svg');
+}
 
 
 /* ================================================== */
@@ -81,7 +63,7 @@
 
 @media screen and (max-width:1075px) {
 
-    .general-section3__container {
+    .services-differences__container {
         padding: 0 50px;
     }
 }
@@ -91,7 +73,7 @@
     .container {
         padding: 5.5rem;
     }
-    .general-section1 {
+    .services-solutions {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
@@ -106,7 +88,7 @@
         gap: 32px;
     }
 
-    .general-section3__container {
+    .services-differences__container {
         padding: 0px;
     }
     .br {
@@ -121,7 +103,7 @@
         padding: 2.5rem;
     } 
 
-    .general-section1 {
+    .services-solutions {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
@@ -139,16 +121,16 @@
         gap: 32px;
     }
 
-    .general-section2 {
+    .services-works {
         grid-template-columns: 1fr;
         gap: 32px;
     }
 
-    .general-section3 {
+    .services-differences {
         gap: 16px;
     }
 
-    .general-section3__container {
+    .services-differences__container {
         padding: 0px;
         gap: 1rem;
     }

@@ -1,59 +1,25 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Card from "../../components/card/Card";
-import ContactMsg from "../../components/contactMsg/ContactMsg";
 import './services.css'
-import { consultancyHeader } from "../../utils/contents/headers-contents/headerContents";
-import { cardContent } from "../../utils/contents/cards-contents/consultancyCard";
-import { consultancy_offers_list } from "../../utils/contents/offers-list/offersContents";
 
+import Header from "../../components/header/Header";
+import ServicesSolutions from "../../components/services/ServicesSolutions";
+import Offers from "../../components/services/Offers";
+import ServicesDifferences from "../../components/services/ServicesDifferences";
+
+// DATA
+import { consultancyHeader } from "../../utils/contents/headers-contents/headerContents";
+import { consultancyCard } from "../../utils/contents/cards-contents/consultancyCard";
+import { consultancyOffers } from "../../utils/contents/offers-list/offersContents";
 
 const Consultancy = () => {
 
-	const { card_1, card_2, card_3, card_4 } = cardContent.section_1;
-	const { card1, card2, card3 } = cardContent.section_3
-
-
 	return (
 		<>
-			<Header title={consultancyHeader.title} content={consultancyHeader.content} img={consultancyHeader.img} url={consultancyHeader.url} />
-
-			<section className="container services-section general-section1">
-				<Card cssClass="white-card icon--row-card" iconClass={card_1.iconClass} h4={card_1.title} p={card_1.content} img={card_1.icon} />
-				<div className="next__btn"></div>
-				<Card cssClass="red-card icon--row-card" iconClass={card_2.iconClass} h4={card_2.title} p={card_2.content} img={card_2.icon} />
-				<br  className="br"/>
-				<Card cssClass="white-card icon--row-card" iconClass={card_3.iconClass} h4={card_3.title} p={card_3.content} img={card_3.icon} />
-				<div className="next__btn"></div>
-				<Card cssClass="red-card icon--row-card" iconClass={card_4.iconClass} h4={card_4.title} p={card_4.content} img={card_4.icon} />
-			</section>
-
-			<section className="container services-section general-section2">
-				<h3 className="section__title">
-					What we offer
-				</h3>
-				<div className="offers__list">
-					{consultancy_offers_list.map(offer => {
-						return <p key={offer.id}>{offer.content}</p>
-					})}
-				</div>
-			</section>
-
-			<section className="container services-section general-section3">
-				<h3 style={{ lineHeight: "56px" }} className="section__title">
-					The Spade Tech Difference
-				</h3>
-				<p className="section__desc">
-					Place holder text for a small description
-				</p>
-
-				<div className="general-section3__container">
-					<Card iconClass="card__img" cssClass="white-card img--row-card" h4={card1.title} p={card1.content} img={card1.icon} />
-					<Card iconClass="card__img" cssClass="white-card img--row-card" h4={card2.title} p={card2.content} img={card2.icon} />
-					<Card iconClass="card__img" cssClass="white-card img--row-card" h4={card3.title} p={card3.content} img={card3.icon} />
-				</div>
-				<ContactMsg />
-			</section>
+			<Header header={consultancyHeader} />
+			{/* <h1>Card section's font size need to be improved</h1> */}
+			<ServicesSolutions card={consultancyCard} extra={true} />
+			<Offers page={consultancyOffers} />
+			<ServicesDifferences cards={consultancyCard.section_3} contact={true} />
 		</>
 	);
 };

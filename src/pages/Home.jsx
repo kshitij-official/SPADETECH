@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <>
-      <Header title={homeHeader.title} content={homeHeader.content} img={homeHeader.img} homeHeader />
+      <Header header={homeHeader}/>
       <Solutions />
       <Services />
       <Slider />
