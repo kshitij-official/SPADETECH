@@ -6,12 +6,12 @@ import { aboutHeader } from '../../utils/contents/headers-contents/headerContent
 import Team from '../../components/about/team/Team'
 
 const About = () => {
-    return (
-        <>
-            <Header header={aboutHeader} />
-            <Team/>
-        </>
-    )
+  return (
+    <>
+      <Header header={aboutHeader} />
+      <Team />
+    </>
+  )
 }
 
 export default About

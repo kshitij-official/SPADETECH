@@ -1,4 +1,3 @@
-
 .team-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -7,8 +6,8 @@
 
 .team-member {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(100px ,1fr));
+    gap: 60px;
 }
 
 .member {
@@ -45,4 +44,11 @@
     font-weight: 600;
     color: #7D8896;
     text-transform: uppercase;
+}
+
+@media (max-width : 860px) {
+  .team-section {
+      grid-template-columns: 1fr;
+      gap: 100px;
+  }
 }
