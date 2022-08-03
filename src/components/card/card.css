@@ -17,8 +17,12 @@
 .card__body {
     display: flex;
     flex-direction: column;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 16px;
     gap: 1.5rem;
+}
+.card__body p {
+  line-height: 26px;
 }
 
 .card__icon {
