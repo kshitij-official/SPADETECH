@@ -17,6 +17,7 @@
 .card__body {
     display: flex;
     flex-direction: column;
+    font-weight: 500;
     gap: 1.5rem;
 }
 

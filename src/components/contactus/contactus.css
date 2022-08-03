@@ -93,8 +93,8 @@ textarea {
   padding: 12px;
   font-size: 14px;
   font-family: Noto sans;
-  font-weight: 500;
 }
+
 .textarea::placeholder {
   font-family: Noto sans;
 }
