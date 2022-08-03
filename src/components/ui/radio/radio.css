@@ -25,9 +25,14 @@
   border-radius: 50%;
   background-color: #EF798A;
 }
+
 .btn_container {
   display: flex;
   align-items: center;
   gap: 10px;
   width: max-content;
+}
+
+.btn_container label {
+  text-transform: uppercase;
 }

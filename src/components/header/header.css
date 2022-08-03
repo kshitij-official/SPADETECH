@@ -3,12 +3,17 @@
 /* ================================================== */
 
 
-.header {
-    background-image: url("../../assets/icons/bg.svg");
-    background-position: center;
-    background-size: cover;
+.url-path {
+  display: block;
+  transform: translateY(-100px);
 }
 
+.header {
+    background-image: url("../../assets/icons/bg.svg");
+    background-position: bottom;
+    background-size: cover;
+    background-color: var(--color-bg);
+}
 
 .header__container {
     display: grid;
@@ -16,7 +21,6 @@
     align-items: center;
     gap: 0;
     color: var(--color-white);
-    background-color: var(--color-bg)
 }
 
 .header__desc--border {
@@ -130,5 +134,8 @@
 
     .header__right img {
         max-width: 80%;
+    }
+    .url-path {
+      transform: translateY(-30px);
     }
 }

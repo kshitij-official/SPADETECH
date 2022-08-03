@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { TbChevronDown, TbMenu2 } from 'react-icons/tb'
 import { IoMdClose } from 'react-icons/io'
 import { NavLink } from 'react-router-dom'
@@ -8,6 +8,14 @@ export const Mobilenav = () => {
   const [isOpen, setisOpen] = useState(false)
   const [openSubMenu, setOpenSubmenu] = useState(false)
   const [openDialog, setOpenDialog] = useState(false)
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.position = 'fixed'
+    } else {
+      document.body.style.position = 'static'
+    }
+
+  }, [isOpen])
   return (
     <div>
       <button className='mobile_menu_btn' onClick={() => setisOpen(!isOpen)}>
@@ -28,7 +36,8 @@ export const Mobilenav = () => {
               </div>
               <div className='services_sub_menu'
                 style={{
-                  height: openSubMenu ? 'max-content' : "0px"
+                  height: openSubMenu ? 'max-content' : "0px",
+                  marginTop: openSubMenu ? "10px" : '0px'
                 }}
               >
                 <NavLink to={"/services/consultancy"} onClick={() => setisOpen(!isOpen)}>CONSULTANCY</NavLink>
