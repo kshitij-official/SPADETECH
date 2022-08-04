@@ -33,7 +33,7 @@ function Footer() {
           <div className="footer__2">
             <h6>Company</h6>
             <ul className="privacy">
-              <li><a href="./">About</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="./">Privacy Policy</a></li>
               <li><a href="./">Cookie Policy</a></li>
               <li><a href="./">Terms and Conditions</a></li>
