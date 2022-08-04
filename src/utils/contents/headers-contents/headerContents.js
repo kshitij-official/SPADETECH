@@ -7,7 +7,7 @@ import hero from "../../../assets/img/SpadeTech.gif"
 
 // HOME PAGE //
 export const homeHeader = {
-    title : <h1 className="home-header">Bringing <span className="hightlight">blockchain</span> to life</h1>,
+    title : <h1 className="home-header">Bringing <span className="hightlight">blockchain</span><div> to life </div> </h1>,
     content: "Offering security, blockchain development and consulting services, Spadetech is the go-to blockchain development agency.",
     img: hero,
     homeHeader: true,
@@ -17,10 +17,12 @@ export const homeHeader = {
 // SECURITY PAGE //
 export const securityHeader = {
 
-    title : <h2>The expertise you need to launch your <span className="hightlight">blockchain</span> project</h2>,
-    content : "Launch your project with confidence. We can come onboard at any stage during the project lifecycle and assist with strategy, planning, and execution.",
+    title : <h2>Launch <span className="hightlight">Secure</span> Projects</h2>,
+    content : "Providing affordable, comprehensive smart contract audits that ensure the safety of your project.",
+    description : "Our skilled technical analysts will conduct a line by line review to identify any potential security vulnerabilities. We'll test thousands of interactions between your smart contract and test blockchain to give you complete confidence that your project is secure.",
     img: header3,
-    url: "SERVICES / SECURITY-AUDIT"
+    url: "SERVICES / SECURITY-AUDIT",
+    extra: true
 }
 
 
