@@ -46,7 +46,7 @@ export const Mobilenav = () => {
               </div>
             </div>
           </div>
-          <NavLink to={'/audit'} onClick={() => setisOpen(!isOpen)}>AUDIT</NavLink>
+          <NavLink to={'/audit'} onClick={() => setisOpen(!isOpen)}>AUDITS</NavLink>
           <NavLink to={'/about'} onClick={() => setisOpen(!isOpen)}>ABOUT</NavLink>
           <div>
             <button className='mobile_contact_btn'

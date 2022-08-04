@@ -43,7 +43,7 @@ export const cardContent = [
         id:4,
         icon: efficient,
         title: "Efficient",
-        content: "We move quickly and efficiently, without compromising on quality. We understand that time is often of the essence for many blockchain projects, so we'll always work to deliver re....",
+        content: "We move quickly and efficiently, without compromising on quality. We understand that time is often of the essence for many blockchain projects, so we'll always work to deliver timely.",
         iconClass: "card__icon",
         className: "col-card  white-card",
         subClass: "card__container",

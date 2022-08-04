@@ -53,15 +53,13 @@ export default function Slider() {
 					</div> */}
 					<div className="text" data-swiper-parallax="-100">
 						<p>
-							"Spadetech provided invaluable support during the development of
-							our project. Their expertise and guidance were essential in
-							helping us overcome some of the challenges we faced."
+							"The Spade team has always been my first choice for WEB3 solutions in a market overrun with con artists and illiterate programmers. Before we met, I struggled to find the necessary information and engineers to realize my vision for my blockchain-based company in the constantly changing digital world. Being kind to customers and ever prepared to offer unbiased advice I have no problem recommending the group to anyone."
 						</p>
 						<article className="author">
 							<img src={johnSmith} alt="John Smith" />
 							<div>
-								<h5>John Smith</h5>
-								<span>Founder & CEO</span>
+								<h5>George Ayinde</h5>
+								<span>Founder - WEMOVE DEFI</span>
 							</div>
 						</article>
 					</div>

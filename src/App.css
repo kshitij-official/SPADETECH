@@ -201,6 +201,7 @@ h6 {
 /* ==================== SECTIONS ==================== */
 /* ================================================== */
 
+
 .section__desc {
     color: var(--color-secondary);
     font-weight: var(--fw-regular);
@@ -279,4 +280,13 @@ h6 {
 }
 header {
   padding-top: 100px;
+}
+
+
+.solutions a{
+    display: none;
+}
+
+button.mobile_contact_btn {
+    padding-top: 1px !important;
 }
