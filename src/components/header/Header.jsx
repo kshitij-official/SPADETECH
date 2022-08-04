@@ -1,10 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import Data from "../data/Data";
-import { ContactUsDialog } from '../contactus/ContactUs'
 import './header.css'
 
 const Header = ({ header }) => {
-  const [openDialog, setOpenDialog] = useState(false)
   return (
     <>
       <header className={header.img ? "header" : " about-header"}>
@@ -15,8 +13,12 @@ const Header = ({ header }) => {
             <p className="header__desc--border">{header.content}</p>
             {header.extra && <p className="header__desc">{header.description}</p>}
             {header.homeHeader && <>
-                <button className="btn header__btn" onClick={() => setOpenDialog(true)}>GET STARTED</button>
-                <ContactUsDialog isOpen={openDialog} onChange={setOpenDialog} />
+                <button className="btn header__btn" onClick={() => {
+                  const service = document.getElementById('serviceRedirection');
+                  service.scrollIntoView({ behavior: 'smooth' })}
+                }>
+                  GET STARTED
+                </button>
               </>
             }
           </div>

@@ -9,6 +9,7 @@ import Development from './pages/services/Development'
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import About from './pages/about/About';
+import Audit from './pages/audit/Audit';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/services/consultancy" element={<Consultancy />} />
           <Route path="/services/development" element={<Development />} />
           <Route path="/about" element={<About />} />
+          <Route path="/audit" element={<Audit/>}></Route>
         </Routes>
       </ScrollToTop>
       <Footer />

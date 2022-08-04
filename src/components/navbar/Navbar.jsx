@@ -18,7 +18,7 @@ function Navbar() {
 
           <div className="nav__list">
             <NavLink to="/" className="nav__item">Home</NavLink>
-            <ServicesDropdown />
+            <ServicesDropdown/>
             <NavLink to="/audit" className="nav__item">Audits</NavLink>
             <NavLink to="/about" className="nav__item">About</NavLink>
           </div>

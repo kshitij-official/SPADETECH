@@ -11,7 +11,9 @@ const Home = () => {
     <>
       <Header header={homeHeader}/>
       <Solutions />
-      <Services />
+      <div id="serviceRedirection">
+        <Services/>
+      </div>
       <Slider />
     </>
   );

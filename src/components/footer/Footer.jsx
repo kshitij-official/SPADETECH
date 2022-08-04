@@ -23,9 +23,10 @@ function Footer() {
           <div className="footer__1">
             <h6>Services</h6>
             <ul className="permalinks">
+            <li><Link to="/services/consultancy">Blockchain Consultancy</Link></li>
               <li><Link to="/services/development">Blockchain Development</Link></li>
               <li><Link to="/services/security-audit">Blockchain Security</Link></li>
-              <li><Link to="/services/consultancy">Blockchain Consultancy</Link></li>
+              
             </ul>
           </div>
 
@@ -42,11 +43,11 @@ function Footer() {
           <div className="footer__3">
             <h6>Socials</h6>
             <ul className="footer__socials">
-              <li><a href="./">Telegram</a></li>
+              <li><a href="https://t.me/spadeaudits">Telegram</a></li>
               <li><a href="./">Youtube</a></li>
               <li><a href="./">Medium</a></li>
-              <li><a href="./">LinkedIn</a></li>
-              <li><a href="./">Wechat</a></li>
+              <li><a href="https://www.linkedin.com/company/spadetech-io/about/">LinkedIn</a></li>
+              <li><a href="https://twitter.com/SpadeAudits?t=l7nyRDHXij5z9bxSa-RT0A&s=09">Twitter</a></li>
             </ul>
           </div>
         </div>

@@ -53,3 +53,9 @@ export const aboutHeader = {
     title: <h2>SpadeTech is a market-leading blockchain technology company.</h2>,
     content: "From developer tools to enterprise solutions, Spadetech is building Ethereum blockchain infrastructure and applications for new economic systems that are more open, efficient, and secure.",
 }
+
+// AUDIT PAGE //
+export const auditHeader = {
+    title : <h1 className="home-header">Audits are <span className="hightlight">Coming Soon!</span></h1>,
+    img: hero
+}
