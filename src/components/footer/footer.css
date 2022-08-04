@@ -27,7 +27,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3.125rem;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 0.875rem;
 }
 
