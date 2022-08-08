@@ -22,7 +22,7 @@ export const securityHeader = {
     description : "Our skilled technical analysts will conduct a line by line review to identify any potential security vulnerabilities. We'll test thousands of interactions between your smart contract and test blockchain to give you complete confidence that your project is secure.",
     img: header3,
     url: "SERVICES / SECURITY-AUDIT",
-    extra: true
+    extra: false
 }
 
 
@@ -34,7 +34,7 @@ export const developmentHeader = {
     description : "From developing smart contracts to building decentralised applications (dApps), our team of experienced blockchain developers can help you bring your project to life. We've got a stellar track record, too, and have delivered on multiple platforms from ERC 20-based tokens to NFT games and DAOs.",
     img : header2,
     url: "SERVICES / DEVELOPMENT",
-    extra: true
+    extra: false
 }
 
 
@@ -42,7 +42,7 @@ export const developmentHeader = {
 export const consultancyHeader = {
 
     title : <h2>The expertise you need to launch your <span className="hightlight">blockchain</span> project</h2>,
-    content : "Launch your project with confidence. We can come onboard at any stage during the project lifecycle and assist  with strategy, planning, and execution.",
+    content : "Launch your project with confidence. We can come onboard at any stage during the project lifecycle and assist  with strategy, planning and execution.",
     img : header1,
     url: "SERVICES / CONSULTANCY"
 }
@@ -50,8 +50,8 @@ export const consultancyHeader = {
 
 // ABOUT PAGE //
 export const aboutHeader = {
-    title: <h2>SpadeTech is a market-leading blockchain technology company.</h2>,
-    content: "From developer tools to enterprise solutions, Spadetech is building Ethereum blockchain infrastructure and applications for new economic systems that are more open, efficient, and secure.",
+    title: <h2>Superior solutions for your <span className="hightlight">blockchain</span> endeavours </h2>,
+    content: "As experts in our field, we provide a holisitic service on all things blockchain and Web3. From auditing and security to development and consultancy, we will take your project from conception through to completion.",
 }
 
 // AUDIT PAGE //

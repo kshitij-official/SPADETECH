@@ -6,10 +6,10 @@ export const ServicesDropdown = () => {
   return (
     <div>
       <DropdownMenu.Root>
-        <DropdownMenu.Trigger className='services_trigger'>
-          <span>Services</span>
-          <TbChevronDown />
-        </DropdownMenu.Trigger>
+          <DropdownMenu.Trigger className='services_trigger'>
+            Services
+           <TbChevronDown/>
+          </DropdownMenu.Trigger>
         <DropdownMenu.Portal>
           <DropdownMenu.Content className='services_dropdown'>
             <DropdownMenu.Item>

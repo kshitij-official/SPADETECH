@@ -6,6 +6,7 @@ import polygon from "../../../assets/icons/polygon.svg";
 import ava from "../../../assets/icons/img.svg";
 import terra from "../../../assets/icons/terra.svg";
 import ethereum from "../../../assets/icons/ethereum.svg"
+import polkadot from "../../../assets/icons/polkadot.svg"
 
 
 export const dataImages = [
@@ -46,7 +47,7 @@ export const dataImages = [
     },
     {
         id: 8,
-        image: terra,
-        name: "terra-logo"
+        image: polkadot,
+        name: "polka-logo"
     },
 ]

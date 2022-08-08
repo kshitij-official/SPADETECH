@@ -4,10 +4,9 @@ import Card from "../card/Card";
 const Solutions = () => {
 	return (
 		<section className="container solutions gray-card ">
-			<h3 className="section__title">Our solution for your business</h3>
+			<h3 className="section__title">Our business values</h3>
 			<p className="section__desc">
-				We make it easy for users to use our platform, that’s why we provide the
-				benefit.
+				These core values shape the way we do business and maintain harmonous relationships with our client.
 			</p>
 			<div className="solutions__container">
 				{cardContent.map(card => {

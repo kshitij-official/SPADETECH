@@ -9,7 +9,7 @@ export const cardContent = [
     {
         id: 1,
         icon: transparent,
-        title: "Transparent",
+        title: "Transparency",
         content: "We're an open book. We believe in total transparency and will always keep you in the loop. We'll be completely open about any findings, regardless of whether they're good or bad.",
         iconClass: "card__icon",
         className: "col-card  white-card",
@@ -20,7 +20,7 @@ export const cardContent = [
     {
         id:2,
         icon: honest,
-        title: "Honest",
+        title: "Honesty",
         content: "We do things the right way. We're honest, reliable and always deliver on our promises. If we say we're going to do something, we'll do it.",
         iconClass: "card__icon",
         className: "col-card  white-card",
@@ -31,7 +31,7 @@ export const cardContent = [
     {
         id:3,
         icon: secure,
-        title: "Secure",
+        title: "Security",
         content: "Our top priority is ensuring every project we audit is 100% secure for users. This means we'll never take shortcuts or overlook any potential vulnerabilities.",
         iconClass: "card__icon",
         className: "col-card  white-card",
@@ -42,7 +42,7 @@ export const cardContent = [
     {
         id:4,
         icon: efficient,
-        title: "Efficient",
+        title: "Efficiency",
         content: "We move quickly and efficiently, without compromising on quality. We understand that time is often of the essence for many blockchain projects, so we'll always work to deliver timely.",
         iconClass: "card__icon",
         className: "col-card  white-card",

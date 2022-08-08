@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import sliderBg from "../../assets/slider/testimonials-bg.svg";
 import johnSmith from "../../assets/slider/smith.png";
+import metatank from "../../assets/slider/metatank.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -73,15 +74,13 @@ export default function Slider() {
 					</div> */}
 					<div className="text" data-swiper-parallax="-100">
 						<p>
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-							dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-							laoreet justo vitae porttitor porttitor."
+							"I continue to be amazed by the depth and breadth of Spade team's development knowledge but also their soft qualities in how they conduct business. Not only do they deliver on the agreed specifications, but they go the extra mile to educate you on possible alternative improvements. It turns out they knew a thing or two about developing projects with a focus on the metaverse. They have a great understanding of the multiple ways that NFTs can be utilised in game development. It has been a pleasure working with them in fine-tuning our long-term vision. I'd recommend them to others who are serious about getting the job done."
 						</p>
 						<article className="author">
-							<img src={johnSmith} alt="John Smith" />
+							<img src={metatank} alt="John Smith" />
 							<div>
-								<h5>John Smith</h5>
-								<span>Founder & CEO</span>
+								<h5>Metatank</h5>
+								<span>Testimonial from Kays</span>
 							</div>
 						</article>
 					</div>
