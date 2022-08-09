@@ -63,7 +63,7 @@ const Form = () => {
     <form ref={form} onSubmit={sendEmail}>
       <RadioGroup value={purposeToContact} onChange={setPurposetoContact} className='radio_container'>
         <RadioButton value="say hi" id='say_hi' active={purposeToContact === 'say hi'}>SAY HI</RadioButton>
-        <RadioButton value="do bussiness" id='do_bussiness' active={purposeToContact === 'do bussiness'}>Do BUSSINESS</RadioButton>
+        <RadioButton value="do bussiness" id='do_bussiness' active={purposeToContact === 'do bussiness'}>DO BUSINESS</RadioButton>
       </RadioGroup>
       <div className='fields_container'>
         <input name='sender_name' placeholder='Name*' value={sender_name} onChange={handleName} required />
