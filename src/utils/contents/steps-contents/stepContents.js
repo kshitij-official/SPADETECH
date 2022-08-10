@@ -16,17 +16,17 @@ export const stepContents = [
         id: 3,
         count: "STEP3",
         intro: "Put your smart contract to the test",
-        content: <span>We take the <span className="hightlight">time to learn about your project</span>. Lorem ipsum dolor sit amet. </span>
+        content: <span>We stimulate <span className="hightlight">thousands of interactions with a test</span> blockchain to ensure your contract is secure and works as intended. </span>
     }, {
         id: 4,
         count: "STEP4",
         intro: "Help your team implement best practices",
-        content: <span>We take the <span className="hightlight">time to learn about your project</span>, Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</span>
+        content: <span>We're always happy to share our expertise and <span className="hightlight">help your team implement best practices for coding, testing and deploying</span> smart contracts.</span>
     }, {
         id: 5,
         count: "STEP5",
         intro: "Deliver a detailed report",
-        content: <span>We take the <span className="hightlight">time to learn about your project</span>, Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</span>
+        content: <span>After reviewing, we provide you with <span className="hightlight">a very detailed report of our findings </span>with all vulnerabilities we've found and our recommendations to fix them.</span>
     }
 ]
 
